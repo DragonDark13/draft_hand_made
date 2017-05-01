@@ -13,94 +13,6 @@ jQuery(function(){
     offset: 50,
     });
 
-    // jQuery('.main_meni').viewportChecker({
-    // // classToAdd: 'animated swing',
-    // // classToRemove: 'invisible',
-    // offset: 400,
-    // invertBottomOffset: false,
-    // callbackFunction: function(elem, action){
-    // elem.addClass('active');
-    // },
-    // });
-
-    // var Top_size = jQuery(".main_meni").offsetTop();
-    // alert('Top_size');
-
-    // jQuery("body>*").click(function(){
-    // alert("Размер элемента:" + this.offsetTop +"x");
-    // });
-
-    // var  Top_size = jQuery(".main_meni").offsetTop();
-    // alert(Top_size);
-
-    // jQuery(".main_meni").offset(function(index, currentCoordinates) {
-
-
-    //     return someObject;
-    // })
-
-    // function function_name(argument) {
-    //     // body...
-    // }
-
-    // jQuery(".main_meni")
-
-    // function TopMeniSize(elem) {
-
-    //     var Top_size = (this.offsetTop) ;
-    //     alert(Top_size);
-    // }
-
-//     var TopMeni = jQuery(".main_meni");
-
-//     // TopMeniSize(TopMeni);
-
-
-//     function offsetPosition(element) {
-//       var offsetLeft = 0, offsetTop = 0;
-//       do {
-//            offsetLeft += element.offsetLeft;
-//           offsetTop  += element.offsetTop;
-//       } while (element = element.offsetParent);
-//        return [offsetLeft, offsetTop];
-
-//        alert(offsetLeft, offsetTop);
-//   }
-
-// offsetPosition(TopMeni);
-
-// function getX(e) {
-// var x = 0; // Начальное значение 0
-// while(e) { // Начинать с элемента e
-// x += e.offsetLeft; // Добавить смещение
-// e = e.offsetParent; // И перейти по ссылке offsetParent
-// }
-// return x; // Вернуть сумму всех смещений
-// // alert(0000);
-// };
-
-// jQuery(".main_meni")function getX(this) {
-//     // body...
-// };
-
-// var a = jQuery(".main_meni");
-// getX(a);
-
-// function function_name(argument) {
-//     // body...
-// }
-
-// function_name
-
-// var TopMeni = jQuery(".main_meni");
-
-// var TopSize = getX(TopMeni);
-
-// alert(TopSize);
-
-// TopMeni.t =  getX;
-
-
 (function(){  // анонимная функция (function(){ })(), чтобы переменные "a" и "b" не стали глобальными
 var a = document.querySelector('.main_meni'), b = null;  // селектор блока, который нужно закрепить
 window.addEventListener('scroll', Ascroll, false);
@@ -152,15 +64,15 @@ function Ascroll() {
         });
 
 
-        var myWidth = 0;
-        myWidth = window.innerWidth;
-        jQuery('body').prepend('<div id="size" style="background:#000;padding:5px;position:fixed;z-index:999;color:#fff;">Width = '+myWidth+'</div>');
-        jQuery(window).resize(function(){
-            var myWidth = 0;
-            myWidth = window.innerWidth;
-            jQuery('#size').remove();
-            jQuery('body').prepend('<div id="size" style="background:#000;padding:5px;position:fixed;z-index:999;color:#fff;">Width = '+myWidth+'</div>');
-        });
+        // var myWidth = 0;
+        // myWidth = window.innerWidth;
+        // jQuery('body').prepend('<div id="size" style="background:#000;padding:5px;position:fixed;z-index:999;color:#fff;">Width = '+myWidth+'</div>');
+        // jQuery(window).resize(function(){
+        //     var myWidth = 0;
+        //     myWidth = window.innerWidth;
+        //     jQuery('#size').remove();
+        //     jQuery('body').prepend('<div id="size" style="background:#000;padding:5px;position:fixed;z-index:999;color:#fff;">Width = '+myWidth+'</div>');
+        // });
 
 
 });
